@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: grid;
+    grid-template:  "header header header" 10vh
+                    "leftside center rightside" 80vh
+                    "leftside bottom rightside" 10vh
+                    / 1fr 4fr 1fr;
+    gap: 1em;
+    background-color: rgb(25, 24, 24);
+    color: white;
+    font-size: 2em;
+}
+
+.header {
+    border: 1px solid white;
+    grid-area: header; 
+
+}
+
+.leftside {
+    border: 1px solid green;
+    grid-area: leftside;
+}
+
+.center {
+    border: 1px solid red;
+    grid-area: center;
+}
+
+.rightside {
+    border: 1px solid yellow;
+    grid-area: rightside;
+}
+
+.bottom {
+    border: 1px solid blue;
+    grid-area: bottom;
+}
